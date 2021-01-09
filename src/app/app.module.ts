@@ -13,6 +13,7 @@ import { ProductYeetComponent } from './product-yeet/product-yeet.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'yeet/motherfucker', component: ProductYeetComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
     ])
   ],
   declarations: [
@@ -33,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductAleartsComponent,
     ProductDetailsComponent,
     ProductYeetComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
